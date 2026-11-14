@@ -1,0 +1,38 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		A00000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 2700; TargetAttributes = {A00000000000000000000002 = {CreatedOnToolsVersion = 27.2; }; }; }; buildConfigurationList = A00000000000000000000003; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, zh_CN, ); mainGroup = A00000000000000000000004; productRefGroup = A00000000000000000000005; projectDirPath = ""; projectRoot = ""; targets = (A00000000000000000000002, ); };
+		A00000000000000000000002 /* CallViaCodex */ = {isa = PBXNativeTarget; buildConfigurationList = A00000000000000000000006; buildPhases = (A00000000000000000000007, A00000000000000000000008, A00000000000000000000009, ); buildRules = (); dependencies = (); name = CallViaCodex; productName = CallViaCodex; productReference = A0000000000000000000000A; productType = "com.apple.product-type.application"; };
+		A00000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (A0000000000000000000000B, A0000000000000000000000C, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A00000000000000000000004 = {isa = PBXGroup; children = (A0000000000000000000000D, A0000000000000000000000E, A00000000000000000000005, A00000000000000000000019, ); sourceTree = "<group>"; };
+		A00000000000000000000005 = {isa = PBXGroup; children = (A0000000000000000000000A, ); name = Products; sourceTree = "<group>"; };
+		A0000000000000000000000D = {isa = PBXGroup; children = (A0000000000000000000000F, A00000000000000000000017, ); path = Sources/CallViaCodex; sourceTree = SOURCE_ROOT; };
+		A0000000000000000000000E = {isa = PBXGroup; children = (A00000000000000000000010, A0000000000000000000001C, A00000000000000000000015, ); name = Resources; sourceTree = "<group>"; };
+		A0000000000000000000000F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViaCodex.swift; sourceTree = "<group>"; };
+		A00000000000000000000010 = {isa = PBXFileReference; lastKnownFileType = text.xml; path = call-via-codex.svg; sourceTree = SOURCE_ROOT; };
+		A0000000000000000000000A = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "call-via-codex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000007 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000011, A00000000000000000000018, ); runOnlyForDeploymentPostprocessing = 0; };
+		A00000000000000000000008 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000012, A00000000000000000000016, A0000000000000000000001B, A0000000000000000000001D, ); runOnlyForDeploymentPostprocessing = 0; };
+		A00000000000000000000009 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A00000000000000000000011 = {isa = PBXBuildFile; fileRef = A0000000000000000000000F; };
+		A00000000000000000000012 = {isa = PBXBuildFile; fileRef = A00000000000000000000010; };
+		A00000000000000000000015 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		A00000000000000000000016 = {isa = PBXBuildFile; fileRef = A00000000000000000000015; };
+		A00000000000000000000017 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexUsage.swift; sourceTree = "<group>"; };
+		A00000000000000000000018 = {isa = PBXBuildFile; fileRef = A00000000000000000000017; };
+		A00000000000000000000019 = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources/Sidebar; sourceTree = SOURCE_ROOT; };
+		A0000000000000000000001A = {isa = PBXBuildFile; fileRef = A00000000000000000000019; };
+		A0000000000000000000001B = {isa = PBXBuildFile; fileRef = A00000000000000000000019; };
+		A0000000000000000000001C = {isa = PBXFileReference; lastKnownFileType = image.png; path = call-via-codex.png; sourceTree = SOURCE_ROOT; };
+		A0000000000000000000001D = {isa = PBXBuildFile; fileRef = A0000000000000000000001C; };
+		A0000000000000000000000B = {isa = XCBuildConfiguration; buildSettings = {ARCHS = arm64; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "call-via-codex"; INFOPLIST_KEY_CFBundleIdentifier = com.zhengxinshushe.call-via-codex; INFOPLIST_KEY_CFBundleName = "call-via-codex"; INFOPLIST_KEY_CFBundleIconFile = "call-via-codex"; INFOPLIST_KEY_LSUIElement = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.zhengxinshushe.call-via-codex; PRODUCT_NAME = "call-via-codex"; SWIFT_VERSION = 6.0; }; name = Debug; };
+		A0000000000000000000000C = {isa = XCBuildConfiguration; buildSettings = {ARCHS = arm64; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "call-via-codex"; INFOPLIST_KEY_CFBundleIdentifier = com.zhengxinshushe.call-via-codex; INFOPLIST_KEY_CFBundleName = "call-via-codex"; INFOPLIST_KEY_CFBundleIconFile = "call-via-codex"; INFOPLIST_KEY_LSUIElement = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; PRODUCT_BUNDLE_IDENTIFIER = com.zhengxinshushe.call-via-codex; PRODUCT_NAME = "call-via-codex"; SWIFT_VERSION = 6.0; }; name = Release; };
+		A00000000000000000000006 = {isa = XCConfigurationList; buildConfigurations = (A00000000000000000000013, A00000000000000000000014, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A00000000000000000000013 = {isa = XCBuildConfiguration; buildSettings = {}; name = Debug; };
+		A00000000000000000000014 = {isa = XCBuildConfiguration; buildSettings = {}; name = Release; };
+	};
+	rootObject = A00000000000000000000001;
+}

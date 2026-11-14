@@ -1,0 +1,22 @@
+# Xcode build products and user state
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+
+# Local deliverables and development prototypes
+outputs/
+work/
+.codex-write-access-check
+
+# Source-design attachments and screenshots (not needed to build the app)
+*.ai
+call via codex 设置界面与关于应用.png
+截屏*.png
+深蓝背景下的极简中文导航侧边栏.png
+
+# Superseded duplicate artwork
+/shadowrocket.svg
+Resources/call-via-codex.iconset/
+Resources/call-via-codex.png
