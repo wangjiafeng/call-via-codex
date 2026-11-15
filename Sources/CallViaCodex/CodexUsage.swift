@@ -32,7 +32,7 @@ enum CodexUsageReader {
                     if process.isRunning { process.terminate() }
                 }
                 let initialize: [String: Any] = ["id": 1, "method": "initialize", "params": [
-                    "clientInfo": ["name": "call-via-codex", "title": "Call via Codex", "version": "1.0.0"],
+                    "clientInfo": ["name": "call-via-codex", "title": "Call via Codex", "version": "1.0.1"],
                     "capabilities": ["experimentalApi": true]
                 ]]
                 let initialized: [String: Any] = ["method": "initialized", "params": [:]]
