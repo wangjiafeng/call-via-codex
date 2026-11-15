@@ -328,7 +328,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
             let content=NSView(frame:NSRect(x:0,y:0,width:440,height:350)); content.wantsLayer=true; content.layer?.backgroundColor=NSColor.white.cgColor
             if let iconURL=Bundle.main.url(forResource:"call-via-codex",withExtension:"svg"),let image=NSImage(contentsOf:iconURL) { let icon=NSImageView(image:image); icon.imageScaling = .scaleProportionallyUpOrDown; icon.frame=NSRect(x:170,y:225,width:100,height:100); content.addSubview(icon) }
             let title=label("call via codex",size:20,weight:.semibold); title.alignment = .center; title.frame=NSRect(x:40,y:185,width:360,height:28); content.addSubview(title)
-            let version=label("v1.0.0",size:13,weight:.regular); version.alignment = .center; version.frame=NSRect(x:40,y:150,width:360,height:22); content.addSubview(version)
+            let version=label("v1.0.1",size:13,weight:.regular); version.alignment = .center; version.frame=NSRect(x:40,y:150,width:360,height:22); content.addSubview(version)
             let desc=label("在Codex中快速调用技能与工具。",size:13,weight:.regular); desc.alignment = .center; desc.frame=NSRect(x:30,y:100,width:380,height:25); content.addSubview(desc)
             let copyright=label("© 北京正笔正心文化发展有限公司",size:13,weight:.regular); copyright.alignment = .center; copyright.frame=NSRect(x:30,y:68,width:380,height:22); content.addSubview(copyright)
             let website=NSButton(title:"https://www.zhengxinshushe.com/  ↗",target:self,action:#selector(openWebsite)); website.isBordered=false; website.font = .systemFont(ofSize:12); website.contentTintColor=NSColor(calibratedRed:7/255,green:86/255,blue:198/255,alpha:1); website.frame=NSRect(x:60,y:40,width:320,height:22); content.addSubview(website)
@@ -552,7 +552,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
             let q=NSButton(title:"彻底退出",target:NSApp,action:#selector(NSApplication.terminate(_:))); q.frame=NSRect(x:210,y:250,width:110,height:30); q.contentTintColor=gold; content.addSubview(q)
         case 3:
             if let iconURL=Bundle.main.url(forResource:"call-via-codex",withExtension:"svg"),let image=NSImage(contentsOf:iconURL) { let icon=NSImageView(image:image); icon.frame=NSRect(x:390,y:320,width:96,height:96); icon.imageScaling = .scaleProportionallyUpOrDown; content.addSubview(icon) }
-            let desc=label("call via codex\nv1.0.0\n在Codex中快速调用技能与工具。\n© 北京正笔正心文化发展有限公司",size:12,weight:.regular); desc.alignment = .center; desc.frame=NSRect(x:250,y:170,width:380,height:130); content.addSubview(desc)
+            let desc=label("call via codex\nv1.0.1\n在Codex中快速调用技能与工具。\n© 北京正笔正心文化发展有限公司",size:12,weight:.regular); desc.alignment = .center; desc.frame=NSRect(x:250,y:170,width:380,height:130); content.addSubview(desc)
             let site=NSButton(title:"访问官网",target:self,action:#selector(openWebsite)); site.frame=NSRect(x:380,y:125,width:100,height:28); content.addSubview(site)
         default: break
         }
